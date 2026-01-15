@@ -6,6 +6,7 @@ import Journalism from "./Pages/Journalism"
 import { Routes, Route, HashRouter } from "react-router-dom";
 import resume from "./assets/resume.pdf"
 import headshot from "./assets/headshot.jpg"
+import Footer from './Footer'
 
 function App() {
   const [isResumeOpen, setIsResumeOpen] = useState(false)
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Journalism" element={<Journalism />} />
         </Routes>
+        <Footer />
       </div>
     </HashRouter>
   )
@@ -144,7 +146,7 @@ function Home() {
         </div>
 
         {/* Info Section */}
-        <div className="flex-1 flex items-center justify-center p-8 relative z-10">
+        <div className="flex-1 flex items-center justify-center p-25 relative z-10">
           <div className="max-w-2xl w-full bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl p-12 shadow-2xl">
             <img 
               src={headshot} 
@@ -165,14 +167,6 @@ function Home() {
               >
                 RESUME
               </button>
-              <a 
-                className="inline-flex items-center text-blue-500 text-sm font-medium tracking-wider uppercase hover:underline"
-                href="https://linkedin.com/in/william-tang-5417262ba" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                LINKEDIN →
-              </a>
             </div>
           </div>
         </div>

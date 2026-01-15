@@ -1,0 +1,25 @@
+:root {
+    margin: 0;
+    padding: 0;
+  }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #96beff, #393839);
+    color: white;
+    text-align: center;
+    height: 50px; /* Adjusted height */
+    z-index: 9999;
+    pointer-events: none; /* Make footer non-interactive */
+  }
+  .flex {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 0.5%;
+    justify-content: center;
+    gap: 10px;
+    pointer-events: auto; /* Enable interaction for child elements */
+  }
