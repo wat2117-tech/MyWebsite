@@ -1,0 +1,44 @@
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index:9999;
+    background: rgba(0, 0, 0, 0.8); /* Add semi-transparent background */
+    backdrop-filter: blur(10px); /* Add blur effect */
+    padding: 15px 0; /* Add some padding */
+}
+
+#name{
+    margin-left: 30px;
+    font-family: Raleway;
+    font-size: 40px;
+    color: #fff; /* Make sure text is white */
+}
+
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 15px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration:none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    transition: color 0.3s ease; /* Add smooth hover effect */
+}
+
+#navbar li a:hover{
+    color: #94a3b8; /* Hover color to match your metallic theme */
+}
