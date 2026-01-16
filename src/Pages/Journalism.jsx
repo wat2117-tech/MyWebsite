@@ -114,6 +114,113 @@ export default function Journalism() {
             In addition to my personal writing, I have contributed articles to various publications, covering topics such as technology, culture, and social issues. My work aims to inform and engage readers while providing thoughtful analysis and perspectives.
           </p>
         </div>
-      </div>
+        <div className ="max-w-6xlmx-autopy-20 px-8 pb-32">
+         <h2 className ="text-4xl font-bold text-white text-center mb-16">More Articles</h2>
+         <div className ="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/*Article 1*/}
+          <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
+            <a 
+              href="https://your-article-url-here.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              >
+            <img 
+              src="/your-image-1.jpg" 
+              alt="Article 1"
+              className="w-full h-48 object-cover cursor-pointer"
+              />
+            </a>
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-black mb-2">Article Title 1</h3>
+              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+            </div>
+          </div>
+          {/*Article 2*/}
+          <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
+            <img 
+              src="/your-image-2.jpg" 
+              alt="Article 2"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-black mb-2">Article Title 2</h3>
+              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+            </div>
+          </div>
+          {/*Article 3*/}
+          <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
+            <a 
+              href="https://your-article-url-here.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              >
+            <img 
+              src="/your-image-1.jpg" 
+              alt="Article 1"
+              className="w-full h-48 object-cover cursor-pointer"
+              />
+            </a>
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-black mb-2">Article Title 3</h3>
+              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+            </div>
+          </div>
+          {/*Article 4*/}
+          <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
+            <a 
+              href="https://your-article-url-here.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              >
+            <img 
+              src="/your-image-1.jpg" 
+              alt="Article 1"
+              className="w-full h-48 object-cover cursor-pointer"
+              />
+            </a>
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-black mb-2">Article Title 4</h3>
+              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+            </div>
+          </div>
+          {/*Article 5*/}
+          <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
+            <a 
+              href="https://your-article-url-here.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              >
+            <img 
+              src="/your-image-1.jpg" 
+              alt="Article 1"
+              className="w-full h-48 object-cover cursor-pointer"
+              />
+            </a>
+            <div className="p-6"> 
+              <h3 className="text-2xl font-bold text-black mb-2">Article Title 5</h3>
+              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+            </div>
+          </div>
+          {/*Article 6*/}
+          <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
+            <a 
+              href="https://your-article-url-here.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              >
+            <img 
+              src="/your-image-1.jpg" 
+              alt="Article 1"
+              className="w-full h-48 object-cover cursor-pointer"
+              />
+            </a>
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-black mb-2">Article Title 6</h3>
+              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>      
     )
 }

@@ -75,3 +75,9 @@
 .link:hover {
   border-bottom: 2px solid #000000;
 }
+@media screen and (min-width: 780px){
+	.full-width-img{ /* this is your id or class name */
+		margin: auto;
+		width:90%;
+  }
+}

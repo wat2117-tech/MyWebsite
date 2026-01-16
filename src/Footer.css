@@ -3,6 +3,26 @@
     padding: 0;
   }
 
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Keep your existing footer styles here */
+}
+
+.footer-transition {
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-visible {
+    transform: translateY(0);
+}
+
+.footer-hidden {
+    transform: translateY(100%);
+}
 .footer {
     position: fixed;
     left: 0;

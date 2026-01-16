@@ -1,44 +1,55 @@
-nav{
+nav {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
-    top: 0;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    z-index:9999;
-    background: rgba(0, 0, 0, 0.8); /* Add semi-transparent background */
-    backdrop-filter: blur(10px); /* Add blur effect */
-    padding: 15px 0; /* Add some padding */
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    transition: transform 0.3s ease-in-out; /* Add transition here */
 }
 
-#name{
+nav.navbar-hidden {
+    transform: translateY(-100%);
+}
+
+nav.navbar-visible {
+    transform: translateY(0);
+}
+
+#name {
     margin-left: 30px;
     font-family: Raleway;
     font-size: 40px;
-    color: #fff; /* Make sure text is white */
+    color: #fff;
 }
 
-#navbar{
-    display:flex;
+#navbar {
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 30px;
 }
 
-#navbar li{
+#navbar li {
     list-style: none;
     padding: 0 15px;
     position: relative;
 }
 
-#navbar li a{
-    text-decoration:none;
+#navbar li a {
+    text-decoration: none;
     font-size: 1.8rem;
     font-weight: 600;
     color: #fff;
-    transition: color 0.3s ease; /* Add smooth hover effect */
+    transition: color 0.3s ease;
 }
 
-#navbar li a:hover{
-    color: #94a3b8; /* Hover color to match your metallic theme */
+#navbar li a:hover {
+    color: #94a3b8;
 }
