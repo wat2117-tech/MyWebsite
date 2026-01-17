@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import NavigationBar from './NavigationBar'
 import About from "./Pages/About"
 import Projects from "./Pages/Projects"
@@ -12,8 +12,6 @@ function App() {
   const [isResumeOpen, setIsResumeOpen] = useState(false)
 
   return (
-   
-
     <HashRouter>
       <div>
         <NavigationBar />
@@ -32,6 +30,35 @@ function App() {
 
 function Home() {
   const [isResumeOpen, setIsResumeOpen] = useState(false)
+  const [name, setName] = useState('')
+  const [showCursor, setShowCursor] = useState(true)
+  const fullName = 'Billy Tang'
+  
+  useEffect(() => {
+    let currentIndex = 0
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= fullName.length) {
+        setName(fullName.slice(0, currentIndex))
+        currentIndex++
+      } else {
+        clearInterval(typingInterval)
+        // Keep cursor blinking for 2 seconds after typing finishes, then hide it
+        setTimeout(() => setShowCursor(false), 2000)
+      }
+    }, 150)
+    
+    return () => clearInterval(typingInterval)
+  }, [])
+  
+  // Cursor blink effect
+  useEffect(() => {
+    const cursorInterval = setInterval(() => {
+      setShowCursor(prev => !prev)
+    }, 530) // Blink speed
+    
+    return () => clearInterval(cursorInterval)
+  }, [])
+  
   return (
     <>
       <div className="flex min-h-screen relative overflow-hidden">
@@ -129,7 +156,7 @@ function Home() {
         >
           <div className="w-full h-full flex flex-col">
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-white text-2xl">Resume</h2>
+              <h2 className="text-white text-2xl" style={{ fontFamily: 'Inter, sans-serif' }}>Resume</h2>
               <button
                 onClick={() => setIsResumeOpen(false)}
                 className="text-white hover:text-gray-300 text-2xl"
@@ -153,17 +180,19 @@ function Home() {
               alt="Billy Tang" 
               className="w-32 h-32 rounded-full object-cover mb-6 border-4 border-gray-200 shadow-lg mx-auto"
             />
-            <h1 className="text-7xl font-light mb-2 tracking-tight text-center">
-              Billy Tang
+            <h1 className="text-7xl font-light mb-2 tracking-tight text-center" style={{ fontFamily: 'Arial, bold', minHeight: '5.5rem' }}>
+              {name}
+              <span style={{ opacity: showCursor && name.length < fullName.length ? 1 : 0 }}>|</span>
             </h1>
             <div className="h-px w-48 bg-black mb-8 mx-auto" />
-            <p className="text-lg mb-1 text-center">Student at Columbia University</p>
-            <p className="text-lg mb-4 text-center">Economics · Political Science</p>
+            <p className="text-lg mb-1 text-center" style={{ fontFamily: 'Poppins, sans-serif' }}>Student at Columbia University</p>
+            <p className="text-lg mb-4 text-center" style={{ fontFamily: 'Poppins, sans-serif' }}>Economics · Political Science</p>
             
             <div className="flex justify-center items-center gap-8 mt-6">
               <button 
                 onClick={() => setIsResumeOpen(!isResumeOpen)}
                 className="bg-neutral-800 text-white px-8 py-3 rounded-lg hover:bg-neutral-700 transition-all shadow-lg font-medium tracking-wider uppercase"
+                style={{ fontFamily: 'Inter, sans-serif' }}
               >
                 RESUME
               </button>

@@ -31,7 +31,7 @@ function NavigationBar(){
     return(
         <nav className={isVisible ? 'navbar-visible' : 'navbar-hidden'}>
             <h1 id="name">
-                <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to="/" style={{ textDecoration: 'none', color: 'inherit', fontFamily: 'Arial, bold' }}>
                     Billy Tang
                 </Link>
             </h1>

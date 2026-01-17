@@ -24,8 +24,93 @@ export default function Journalism() {
     ];
 
     return (
-      <div className="min-h-screen bg-slate-900">
-        <div className="flex flex-col items-center justify-center pt-20 px-64">
+      <div className="flex min-h-screen relative overflow-hidden">
+        {/* Animated Metallic Wave Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-zinc-900">
+          <div className="absolute inset-0 opacity-30">
+            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-slate-700 to-transparent animate-pulse" 
+                 style={{ animationDuration: '4s' }} />
+          </div>
+          
+          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="metallic-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#94a3b8" stopOpacity="0.9">
+                  <animate attributeName="stop-color" 
+                    values="#94a3b8;#cbd5e1;#94a3b8" 
+                    dur="6s" 
+                    repeatCount="indefinite" />
+                </stop>
+                <stop offset="25%" stopColor="#e2e8f0" stopOpacity="0.7">
+                  <animate attributeName="stop-color" 
+                    values="#e2e8f0;#f8fafc;#e2e8f0" 
+                    dur="5s" 
+                    repeatCount="indefinite" />
+                </stop>
+                <stop offset="50%" stopColor="#64748b" stopOpacity="0.8">
+                  <animate attributeName="stop-color" 
+                    values="#64748b;#94a3b8;#64748b" 
+                    dur="7s" 
+                    repeatCount="indefinite" />
+                </stop>
+                <stop offset="75%" stopColor="#cbd5e1" stopOpacity="0.6">
+                  <animate attributeName="stop-color" 
+                    values="#cbd5e1;#e2e8f0;#cbd5e1" 
+                    dur="5.5s" 
+                    repeatCount="indefinite" />
+                </stop>
+                <stop offset="100%" stopColor="#94a3b8" stopOpacity="0.9">
+                  <animate attributeName="stop-color" 
+                    values="#94a3b8;#cbd5e1;#94a3b8" 
+                    dur="6s" 
+                    repeatCount="indefinite" />
+                </stop>
+              </linearGradient>
+              
+              <filter id="metallic-blur">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+              </filter>
+            </defs>
+            
+            <path fill="url(#metallic-gradient)" filter="url(#metallic-blur)">
+              <animate attributeName="d" 
+                dur="15s" 
+                repeatCount="indefinite"
+                values="
+                  M0,400 Q250,300 500,350 T1000,400 L1000,1000 L0,1000 Z;
+                  M0,450 Q250,350 500,400 T1000,450 L1000,1000 L0,1000 Z;
+                  M0,350 Q250,450 500,300 T1000,350 L1000,1000 L0,1000 Z;
+                  M0,400 Q250,300 500,350 T1000,400 L1000,1000 L0,1000 Z
+                " />
+            </path>
+            
+            <path fill="url(#metallic-gradient)" opacity="0.5" filter="url(#metallic-blur)">
+              <animate attributeName="d" 
+                dur="12s" 
+                repeatCount="indefinite"
+                values="
+                  M0,500 Q250,400 500,450 T1000,500 L1000,1000 L0,1000 Z;
+                  M0,450 Q250,550 500,400 T1000,450 L1000,1000 L0,1000 Z;
+                  M0,550 Q250,450 500,500 T1000,550 L1000,1000 L0,1000 Z;
+                  M0,500 Q250,400 500,450 T1000,500 L1000,1000 L0,1000 Z
+                " />
+            </path>
+            
+            <path fill="url(#metallic-gradient)" opacity="0.3" filter="url(#metallic-blur)">
+              <animate attributeName="d" 
+                dur="18s" 
+                repeatCount="indefinite"
+                values="
+                  M0,600 Q250,500 500,550 T1000,600 L1000,1000 L0,1000 Z;
+                  M0,550 Q250,650 500,500 T1000,550 L1000,1000 L0,1000 Z;
+                  M0,650 Q250,550 500,600 T1000,650 L1000,1000 L0,1000 Z;
+                  M0,600 Q250,500 500,550 T1000,600 L1000,1000 L0,1000 Z
+                " />
+            </path>
+          </svg>
+        </div>
+      <div className="min-h-screen relative z-10">
+      <div className="flex flex-col items-center justify-center pt-20 px-64 bg-slate-900 bg-opacity-80 backdrop-blur-sm pb-12">
           <h1 className="text-4xl text-white mb-8">Journalism</h1>
           <p 
             className="text-2xl text-white mb-6, px-85" 
@@ -52,7 +137,7 @@ export default function Journalism() {
             className="text-lg text-white mt-6 max-w-4xl text-center" 
             style={{
               fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', 
-              fontWeight: '400'
+              fontWeight: '400',
             }}
           >
             The Z-List is a Substack newsletter where I share my thoughts on current events, politics, and culture.
@@ -114,7 +199,7 @@ export default function Journalism() {
             In addition to my personal writing, I have contributed articles to various publications, covering topics such as technology, culture, and social issues. My work aims to inform and engage readers while providing thoughtful analysis and perspectives.
           </p>
         </div>
-        <div className ="max-w-6xlmx-autopy-20 px-8 pb-32">
+        <div className ="max-w-6xlmx-auto py-20 px-8 pb-32">
          <h2 className ="text-4xl font-bold text-white text-center mb-16">More Articles</h2>
          <div className ="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/*Article 1*/}
@@ -233,6 +318,7 @@ export default function Journalism() {
           </div>
          </div>
         </div>
+      </div>
       </div>      
     )
 }
