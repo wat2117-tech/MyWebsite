@@ -108,7 +108,7 @@ export default function Journalism() {
             </div>
           </div>
         </div>
-        <div className="max-w-xl mx-auto py-20px-8">
+        <div className="max-w-xl mx-auto py-20 px-12">
           <h2 className ="text-3xl font-bold text-white text-center mb-8">Professional Journalism</h2>
           <p className="text-lg text-white text-center">
             In addition to my personal writing, I have contributed articles to various publications, covering topics such as technology, culture, and social issues. My work aims to inform and engage readers while providing thoughtful analysis and perspectives.
@@ -120,103 +120,115 @@ export default function Journalism() {
           {/*Article 1*/}
           <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
             <a 
-              href="https://your-article-url-here.com" 
+              href="https://www.usatoday.com/story/opinion/voices/2024/04/17/ai-students-cheating-plagiarism-grammarly/73223779007/" 
               target="_blank" 
               rel="noopener noreferrer"
               >
             <img 
-              src="/your-image-1.jpg" 
+              src="/USAToday.png" 
               alt="Article 1"
               className="w-full h-48 object-cover cursor-pointer"
               />
             </a>
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-black mb-2">Article Title 1</h3>
-              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+              <h3 className="text-2xl font-bold text-black mb-2">She used Grammarly to proofread her paper. Now she's accused of 'unintentionally cheating.'
+</h3>
+              <p className="text-slate-800 leading-relaxed">Whatever my school's rule is on artificial intelligence, I will abide by it. But the concern over Grammarly makes me think of the debate over calculator use in schools from the 1970s.
+.</p>
             </div>
           </div>
           {/*Article 2*/}
           <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
+            <a 
+              href="https://www.usnews.com/opinion/articles/2024-07-03/ten-commandments-signs-in-schools-are-wrong-but-students-like-me-dont-pay-attention-to-classroom-posters-anyway" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              >
             <img 
-              src="/your-image-2.jpg" 
+              src="/Ten Commandments.jpg" 
               alt="Article 2"
               className="w-full h-48 object-cover"
             />
+            </a>
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-black mb-2">Article Title 2</h3>
-              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+              <h3 className="text-2xl font-bold text-black mb-2">Ten Commandments Signs in Schools Are Wrong. But Students Like Me Don't Pay Attention to Classroom Posters Anyway
+                </h3>
+              <p className="text-slate-800 leading-relaxed">The blurring of church and state in schools is alarming, but we should work to change laws, not worry about posters that many will brush off anyway.
+
+              </p>
             </div>
           </div>
           {/*Article 3*/}
           <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
             <a 
-              href="https://your-article-url-here.com" 
+              href="https://www.usnews.com/opinion/articles/2024-09-10/what-trump-and-harris-could-learn-from-high-school-debaters" 
               target="_blank" 
               rel="noopener noreferrer"
               >
             <img 
-              src="/your-image-1.jpg" 
+              src="/TrumpHarris.jpg" 
               alt="Article 1"
               className="w-full h-48 object-cover cursor-pointer"
               />
             </a>
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-black mb-2">Article Title 3</h3>
-              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+              <h3 className="text-2xl font-bold text-black mb-2">What Trump and Harris Could Learn From High School Debaters.</h3>
+              <p className="text-slate-800 leading-relaxed">The first rule of Debate Club is no pundits.</p>
             </div>
           </div>
           {/*Article 4*/}
           <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
             <a 
-              href="https://your-article-url-here.com" 
+              href="https://thefulcrum.us/election-2024/harris-walz-gen-z" 
               target="_blank" 
               rel="noopener noreferrer"
               >
             <img 
-              src="/your-image-1.jpg" 
+              src="/KamalaHQ.jpg" 
               alt="Article 1"
               className="w-full h-48 object-cover cursor-pointer"
               />
             </a>
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-black mb-2">Article Title 4</h3>
-              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+              <h3 className="text-2xl font-bold text-black mb-2">Don't meme it: Harris/Walz must address Gen Z's real concerns to win.</h3>
+              <p className="text-slate-800 leading-relaxed">But memes are not enough to win over younger voters like me. They’re great, don’t get me wrong, but people don’t often take their political views from deep-fried images.</p>
             </div>
           </div>
           {/*Article 5*/}
           <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
             <a 
-              href="https://your-article-url-here.com" 
+              href="https://www.inquirer.com/opinion/commentary/march-madness-online-gambling-teens-zoomers-20250404.html" 
               target="_blank" 
               rel="noopener noreferrer"
               >
             <img 
-              src="/your-image-1.jpg" 
+              src="/Gambling.png" 
               alt="Article 1"
               className="w-full h-48 object-cover cursor-pointer"
               />
             </a>
             <div className="p-6"> 
-              <h3 className="text-2xl font-bold text-black mb-2">Article Title 5</h3>
-              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+              <h3 className="text-2xl font-bold text-black mb-2">Online gambling puts tech-savvy teens at risk
+</h3>
+              <p className="text-slate-800 leading-relaxed">The prevalence and aggressive advertising by online gambling sites represent a new public health problem for Gen Z.</p>
             </div>
           </div>
           {/*Article 6*/}
           <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-white border-opacity-20 transform transition-all duration-500 hover:scale-105">
             <a 
-              href="https://your-article-url-here.com" 
+              href="https://www.floridatoday.com/story/opinion/2025/03/06/17-states-passed-laws-protecting-student-journalists/81370144007/" 
               target="_blank" 
               rel="noopener noreferrer"
               >
             <img 
-              src="/your-image-1.jpg" 
+              src="/StuJournalist.png" 
               alt="Article 1"
               className="w-full h-48 object-cover cursor-pointer"
               />
             </a>
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-black mb-2">Article Title 6</h3>
-              <p className="text-slate-300 leading-relaxed">A brief description of the article content goes here.</p>
+              <h3 className="text-2xl font-bold text-black mb-2">Florida needs to protect student journalists | Opinion</h3>
+              <p className="text-slate-800 leading-relaxed">Since 2023, almost 2.5 newspapers have closed daily, with the U.S. losing almost a third of all newspapers since 2005. Journalists are losing their jobs; it’s almost impossible to keep up with the firings or “restructurings.” The news industry is shrinking and the defense against that isn’t some new grant from the Craig Newmark Foundation.</p>
             </div>
           </div>
          </div>
