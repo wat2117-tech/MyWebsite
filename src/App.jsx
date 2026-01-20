@@ -5,7 +5,7 @@ import Projects from "./Pages/Projects"
 import Journalism from "./Pages/Journalism"
 import { Routes, Route, HashRouter } from "react-router-dom";
 import resume from "./assets/resume.pdf"
-import headshot from "./assets/headshot.jpg"
+import headshot from "./assets/Headshot.JPG";
 import Footer from './Footer'
 
 function App() {
